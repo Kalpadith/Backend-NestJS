@@ -1,4 +1,3 @@
-// src/app.module.ts
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
@@ -20,7 +19,7 @@ import { PostsModule } from './posts/posts.module';
         const username = configService.get<string>('DB_USERNAME');
         const password = configService.get<string>('DB_PASSWORD');
         const database = configService.get<string>('DB_DATABASE');
-        
+        //to test weather values properly loaded from .env file (Because, previously got error of loading DB_USERNAME)
         console.log('DB_HOST:', host);
         console.log('DB_PORT:', port);
         console.log('DB_USERNAME:', username);
