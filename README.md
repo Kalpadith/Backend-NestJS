@@ -26,14 +26,20 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Create .env file  in project root folder including following details:
-DB_HOST=your host
-DB_PORT=Port number of postgree SQL data base server is running
-DB_USERNAME=Your Database username
-DB_PASSWORD=Your Database password
-DB_DATABASE=Your Database Name
-JWT_SECRET=Your JWT secret key
-JWT_EXPIRATION=JWT token expiration time
+### Setting up Environment Variables
+
+Create a `.env` file in the project root folder and add the following environment variables:
+
+```env
+DB_HOST=your_host
+DB_PORT=port_number
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
+DB_DATABASE=your_database_name
+JWT_SECRET=your_jwt_secret_key
+JWT_EXPIRATION=jwt_token_expiration_time
+
+
 
 ## Installation
 
