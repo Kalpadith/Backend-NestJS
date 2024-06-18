@@ -26,7 +26,7 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-# Create .env file  in project root folder including following details:
+## Create .env file  in project root folder including following details:
 DB_HOST=your host
 DB_PORT=Port number of postgree SQL data base server is running
 DB_USERNAME=Your Database username
