@@ -1,6 +1,5 @@
-// src/posts/post.entity.ts
 import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';
-import { User } from '../users/user.entity';
+import { User } from '../users/user.entity'; // imported to manage the relationship in tables
 
 @Entity()
 export class Post {

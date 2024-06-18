@@ -1,4 +1,3 @@
-// src/posts/posts.controller.ts
 import { Controller, Get, Post, Param, Body, Patch, Delete, UseGuards } from '@nestjs/common';
 import { PostsService } from './posts.service';
 import { Post as PostEntity } from './post.entity';

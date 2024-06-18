@@ -1,7 +1,6 @@
-// src/users/user.entity.ts
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 import * as bcrypt from 'bcrypt';
-import { Post } from '../posts/post.entity';
+import { Post } from '../posts/post.entity'; // posts for manage the ralationship between tbls
 
 @Entity()
 export class User {
