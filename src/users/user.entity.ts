@@ -1,6 +1,7 @@
 // src/users/user.entity.ts
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 import * as bcrypt from 'bcrypt';
+import { Post } from '../posts/post.entity';
 
 @Entity()
 export class User {
@@ -16,6 +17,8 @@ export class User {
   @Column()
   password: string;
 
+  @OneToMany(() => Post, post => post.user)
+  posts: Post[];
 
   async setPassword(password: string) {
     const salt = await bcrypt.genSalt();
