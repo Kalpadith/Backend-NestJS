@@ -38,7 +38,7 @@ DB_PASSWORD=your_database_password
 DB_DATABASE=your_database_name
 JWT_SECRET=your_jwt_secret_key
 JWT_EXPIRATION=jwt_token_expiration_time
-
+---
 
 
 ## Installation
